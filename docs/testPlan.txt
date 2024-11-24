@@ -12,7 +12,7 @@ Escopo:
 
 Riscos:
  - Login não permitido
- - Criente com dados incompletos;
+ - Cliente com dados incompletos;
  - Transações inválidas
 
 Estratégias de testes:
