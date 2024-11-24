@@ -1,0 +1,9 @@
+Sugestão de Melhoria
+
+- Na tela de Incluir Clientes, a forma que os botões estão distribuídos, dá um destaque maior para o 
+"Limpar", já que ele está a frente do "Salvar". Desta forma. o botão "Limpar" poderia estar abaixo do 
+formulário, dando uma noção de que é possível limpar os dados preenchidos nos campos, e o botão "Salvar"
+teria um maior destaque, visto que é uma funcionalidade de cadastro.
+
+Evidência:
+bugs/screenshots/botoes-incluirCliente.png

@@ -1,0 +1,20 @@
+O campo CPF permanece com erro, mesmo após preenchimento, após a mensagem de "Campo Obrigatório" ser exibida.
+
+- Ao tentar preencher o campo CPF, após mensagem de erro de "Campo Obrigatório" ser exibida, a aplicação não reconhece o novo preenchimento.
+
+
+- Passos:
+ 1- Acessar a aplicação com login válido;
+ 2- Acessar o menu QA->Clientes->Incluir;
+ 3- Preencher os campos obrigatórios, menos o campo CPF;
+ 4- Clicar no botão "Salvar";
+ 5- Após mensagem de erro "Campo Obrigatório" no campo CPF, preencher o campo com dados válidos;
+ 6- Clicar no botão "Salvar" novamente.
+
+ - Resultado Esperado: A mensagem de erro não deve mais ser exibida e o botão "Salvar" deve ser habilitado.
+ - Resultado Atual: A mensagem de erro permanece sendo exibida e o botão "Salvar" fica desaabilitado.
+
+- Evidências:
+bugs/screenshots/erro-campo-cpf.png
+
+- CT associado: CN1 - CT3

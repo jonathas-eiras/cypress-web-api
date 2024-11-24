@@ -1,0 +1,86 @@
+Cenários de teste:
+ CN1 - Validar Campos obrigatórios
+  
+  Casos de testes:
+   CT1: Campos obrigatórios indicados com asteriscos - Tela de cadastrar Cliente
+    Steps:
+     1- Acessar a página inicial;
+     2- Clicar no menu QA - Clientes - Incluir;
+     3- Verificar se os campos Nome, CPF, Ativo? e Saldo Disponível estão marcados com asterisco
+
+    Resultado Esperado: Os campos devem conter  asterisco.
+
+   CT2: Campos obrigatórios indicados com asteriscos - Tela de cadastrar Transação
+    Steps:
+     1- Acessar a página inicial;
+     2- Clicar no menu QA - Transações - Incluir;
+     3- Verificar se os campos Selecione o cliente e Valor Transação estão marcados com asterisco
+
+    Resultado Esperado: Os campos devem conter asterisco.
+
+
+   CT3: Mensagem de campos obrigatórios - Tela de cadastrar Cliente
+    Steps:
+     1- Acessar a página inicial;
+     2- Clicar no menu QA - Clientes - Incluir;
+     3- Deixar os campos Nome, CPF, Ativo? e Saldo Disponível em branco;
+     4- Clicar em Salvar
+
+    Resultado Esperado: Deve ser exibida uma Mensagem de erro indicando que os campos são obrigatórios.
+
+   CT4: Mensagem de campos obrigatórios - Tela de cadastrar Transação
+    Steps:
+     1- Acessar a página inicial;
+     2- Clicar no menu QA - Transações - Incluir;
+     3- Deixar os campos Selecione o cliente e Valor Transação em branco;
+     4- Clicar em Salvar
+
+    Resultado Esperado: Deve ser exibida uma Mensagem de erro indicando que os campos são obrigatórios.
+
+ CN2 - Validar permissão de vendas
+  Casos de testes:
+   CT1:  Venda permitida - Saldo = Valor da compra
+    Steps:
+     1- Acessar a página inicial;
+     2- Clicar no menu QA - Transações - Incluir;
+     3- Selecionar cliente com Saldo Positivo e igual ao valor da transação;
+     4- Adicionar Valor Transação com mesmo valor do saldo do cliente.
+    
+    Resultado Esperado: A transação deve ser incluída com sucesso.
+
+   CT2:  Venda permitida - Saldo > Valor da compra
+    Steps:
+     1- Acessar a página inicial;
+     2- Clicar no menu QA - Transações - Incluir;
+     3- Selecionar cliente com Saldo Positivo e maior que o valor da transação;
+     4- Adicionar Valor Transação com valor menor do que o saldo do cliente.
+    
+    Resultado Esperado: A transação deve ser incluída com sucesso.
+
+   CT3:  Venda não permitida - Saldo < Valor da compra
+    Steps:
+     1- Acessar a página inicial;
+     2- Clicar no menu QA - Transações - Incluir;
+     3- Selecionar cliente com Saldo menor que o valor da transação;
+     4- Adicionar Valor Transação com valor maior do que o saldo do cliente.
+    
+    Resultado Esperado: A transação não deve ser permitida.
+
+
+ CN3 - Validar login no sistema.
+  Casos de testes:
+   CT1 - Login com dados válidos
+    Steps:
+     1- Acessar a tela de login;
+     2- Preencher os campos com dados válidos;
+     3- Clicar em Sign in.
+    
+    Resultado Esperado: O usuário deve autenticado com sucesso e deve ter acesso as funcionalidades.
+
+   CT2 - Login com dados inválidos
+    Steps:
+     1- Acessar a tela de login;
+     2- Preencher os campos com dados inválidos;
+     3- Clicar em Sign in.
+    
+    Resultado Esperado: O usuário não deve autenticado e não pode ter acesso as funcionalidades.

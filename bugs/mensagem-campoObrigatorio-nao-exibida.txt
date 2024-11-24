@@ -1,0 +1,19 @@
+A mensagem de Campo Obrigatório, não é exibida.
+
+- Ao tentar Incluir uma Transação com o campo Valor Transação, sem preenchimento,
+a mensagem de campo obrigatório não está sendo exibida.
+
+
+- Passos:
+ 1- Acessar a aplicação com login válido;
+ 2- Acessar o menu QA->Transações->Incluir;
+ 3- Preencher os campos obrigatórios, menos o campo Valor Transação;
+ 4- Clicar no botão "Salvar";
+
+ - Resultado Esperado: A mensagem de erro de Campo Obrigatório deve ser exibida, para o campo Valor Transação.
+ - Resultado Atual: A mensagem de erro não é exibida.
+
+- Evidências:
+bugs/screenshots/saldoDisponivel-nao-obrigatorio.png
+
+- CT associado: CN1 - CT4

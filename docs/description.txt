@@ -1,0 +1,60 @@
+Olá Jhonatas,
+Espero que você esteja bem!
+
+Após nossa conversa, estamos empolgados em ver você em ação! Gostaríamos de convidar você a participar do nosso Desafio Técnico, que será uma excelente oportunidade para demonstrar suas habilidades. Não se preocupe em cobrir todos os aspectos ou em realizar tarefas adicionais; o importante é que você explore o desafio até onde sua curiosidade levar. 
+
+Instruções do Desafio
+
+Na RPE, nosso objetivo é transformar a experiência de compra dos nossos clientes, e uma aplicação confiável é crucial para isso. Para alcançar essa meta, precisamos agilizar nossas entregas e garantir a qualidade das aplicações por meio de soluções inovadoras e testes rigorosos. O desafio está dividido em duas etapas: Frontend e Backend.
+
+Etapa 1: Habilidades em automação Frontend
+
+Acesse nossa aplicação de teste: http://provaqa.prc.rpe.tech:9080/desafioqa/
+
+Regras de Negócio:
+
+Campos obrigatórios são indicados com um asterisco (*)
+A venda só deve ser permitida se o saldo do cliente for igual ou superior ao valor da compra
+A autenticação do sistema deve ser realizada com as credenciais: Login/Senha: admin/admin.
+Escopo mínimo esperado:
+
+Elaboração de um plano de testes
+Levantamento de cenários e especificação dos casos de teste
+Automação dos principais fluxos: login, cadastro de cliente e transação
+Identificação de possíveis bugs, detalhando os passos para reproduzi-los. Caso não encontre bugs, sugestões de melhorias na aplicação são bem-vindas.
+Critérios de Avaliação:
+
+Organização
+Plano de testes
+Casos de teste
+Boas práticas
+Diferenciais (aqui iremos avaliar aspectos que são sua marca registrada! Sinta-se à vontade para usar a criatividade e apresentar seus diferenciais).
+Etapa 2: Habilidades em automação Backend
+
+Crie casos de teste automatizados para a aplicação back-end, utilizando as nossas APIs disponíveis aqui: Tote.
+
+API de Portadores:
+
+GET https://horizon-api-sb.app.rpe.tech/api/v1/portadores/{idPortador}
+Documentação: https://tote.horizonpay.tech/docs/horizon/b87f9d9842f42-listar-portadores
+PATCH https://horizon-api-sb.app.rpe.tech/api/v1/portadores/{idPortador}
+Documentação: https://tote.horizonpay.tech/docs/horizon/zh74k79rcae7x-alterar-dados-do-portador
+POST https://horizon-api-sb.app.rpe.tech/api/v1/portadores/{idPortador}/dependentes
+Documentação: https://tote.horizonpay.tech/docs/horizon/abb2mzjdc7ut8-cadastrar-dependentes
+DELETE https://horizon-api-sb.app.rpe.tech/api/v1/portadores/{idPortador}/telefones/{idTelefone}
+Documentação: https://tote.horizonpay.tech/docs/horizon/264b05e0912ad-deletar-telefone
+API de Cartões:
+PUT https://cartao-service-sb.app.rpe.tech/api/v1/cartoes/{idCartao}/senha
+Documentação: https://tote.horizonpay.tech/docs/horizon/313eea78fb485-alterar-senha
+Tarefas:
+
+Desenvolva fluxos de teste para os métodos GET, POST, PUT, PATCH e DELETE.
+Embora utilizemos Java, sinta-se à vontade para usar a linguagem com a qual você tem mais familiaridade.
+Quando tiver concluído, crie um repositório privado para o projeto e compartilhe com os emails: angelina.sales@rpe.tech e oseias.lima@rpe.tech, e nos envie a URL junto ao restante do desafio em resposta a este e-mail, com CÓPIA PARA TODOS.
+
+O prazo para cumprir o desafio é segunda-feira (25/11) às 10h00.
+>> Caso precise de mais prazo, favor sinalizar.
+
+Qualquer dúvida, pode responder este e-mail para todos, pois todos que estão copiados podem ajudar de alguma forma.
+
+Boa sorte 😃
