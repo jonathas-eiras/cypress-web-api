@@ -1,7 +1,6 @@
 Cenários de teste:
- CN1 - Validar Campos obrigatórios
-  
-  Casos de testes:
+
+- Validar Campos obrigatórios
    CT1: Campos obrigatórios indicados com asteriscos - Tela de cadastrar Cliente
     Steps:
      1- Acessar a página inicial;
@@ -37,9 +36,8 @@ Cenários de teste:
 
     Resultado Esperado: Deve ser exibida uma Mensagem de erro indicando que os campos são obrigatórios.
 
- CN2 - Validar permissão de vendas
-  Casos de testes:
-   CT1:  Venda permitida - Saldo = Valor da compra
+- Validar permissão de vendas
+  CT5:  Venda permitida - Saldo = Valor da compra
     Steps:
      1- Acessar a página inicial;
      2- Clicar no menu QA - Transações - Incluir;
@@ -48,7 +46,7 @@ Cenários de teste:
     
     Resultado Esperado: A transação deve ser incluída com sucesso.
 
-   CT2:  Venda permitida - Saldo > Valor da compra
+   CT6:  Venda permitida - Saldo > Valor da compra
     Steps:
      1- Acessar a página inicial;
      2- Clicar no menu QA - Transações - Incluir;
@@ -57,7 +55,7 @@ Cenários de teste:
     
     Resultado Esperado: A transação deve ser incluída com sucesso.
 
-   CT3:  Venda não permitida - Saldo < Valor da compra
+   CT7:  Venda não permitida - Saldo < Valor da compra
     Steps:
      1- Acessar a página inicial;
      2- Clicar no menu QA - Transações - Incluir;
@@ -67,9 +65,8 @@ Cenários de teste:
     Resultado Esperado: A transação não deve ser permitida.
 
 
- CN3 - Validar login no sistema.
-  Casos de testes:
-   CT1 - Login com dados válidos
+- Validar login no sistema.
+   CT8 - Login com dados válidos
     Steps:
      1- Acessar a tela de login;
      2- Preencher os campos com dados válidos;
@@ -77,7 +74,7 @@ Cenários de teste:
     
     Resultado Esperado: O usuário deve autenticado com sucesso e deve ter acesso as funcionalidades.
 
-   CT2 - Login com dados inválidos
+   CT9 - Login com dados inválidos
     Steps:
      1- Acessar a tela de login;
      2- Preencher os campos com dados inválidos;
