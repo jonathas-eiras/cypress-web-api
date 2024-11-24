@@ -1,0 +1,40 @@
+Objetivo:
+ - Validar os principais fluxos e regras de negócios, como também buscar identificar possíveis melhorias.
+Versão:
+ - 1.0
+Escopo:
+ - Validação das regras de negócio:
+  * Campos obrigatórios são indicados com um asterisco (*);
+  * A venda só deve ser permitida se o saldo do cliente for igual ou superior ao valor da compra
+  * A autenticação do sistema deve ser realizada com as credenciais: Login/Senha: admin/admin.
+ - Automação dos fluxos de Login, Cadastro de Cliente e Transações
+ - Levantamento de possíveis bugs e sugestões de melhorias.
+
+Riscos:
+ - Login não permitido
+ - Cliente com dados incompletos;
+ - Transações inválidas
+
+Estratégias de testes:
+ - Técnicas de testes
+  * Partição de equivalência para levantamento dos casos de testes.
+
+ - Tipos de testes
+  * Testes funcionais
+  * Testes exploratórios
+  * Testes de regressão automatizados
+  
+ - Ferramentas para automação
+  * Cypress
+
+Atividades e Estimativas:
+ - Atividades:
+  * Elaboração do plano de testes
+  * Levantamento dos cenários 
+  * Especificação dos casos de teste 
+  * Automação dos principais fluxos: login, cadastro de cliente e transação 
+  * Identificação de possíveis bugs e/ou sugestões de melhorias
+
+ - Estimativa:
+  * 1 dia e meio
+

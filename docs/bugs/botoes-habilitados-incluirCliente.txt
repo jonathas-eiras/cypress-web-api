@@ -1,0 +1,14 @@
+OS botões "Salvar" e "Limpar", aparecem habilitados antes do preenchimento dos campos obrigatórios.
+
+- Ao acessar a tela de Incluir Cliente pela primeira vez através do menu QA->Clientes->Incluir, 
+os botões aparecem habilitados, mesmo antes do preenchimento dos campos obrigatórios. Só ficam desabilitados,
+após o primeiro clique em um dos botões.
+
+- Passos:
+ 1- Acessar a aplicação com login válido;
+ 2- Acessar o menu QA->Clientes->Incluir;
+ 3- Clicar no botão "Salvar" ou "Limpar"
+
+ - Resultado Esperado: Botões devem aparecer desabilitados, até que todos os campos obrigatórios estejam preenchidos.
+ - Resultado Atual: Os botões aparecem habilitados assim que a tela é carregada, mesmo quando os campos obrigatórios
+ não estão preenchidos. Só ficam desabilitados após alguma ação de clique.

@@ -1,0 +1,17 @@
+{
+    "nome": "João da Silva",
+    "nomeSocial": "João Gomes",
+    "nomeMae": "Maria da Silva",
+    "cpf": "91829438000",
+    "dataNascimento": "2000-04-15",
+    "sexo": "MASCULINO",
+    "telefone": {
+      "tipo": "CELULAR",
+      "ramal": "4020",
+      "area": "83",
+      "telefone": "999999999",
+      "receberSMS": false,
+      "faturaDigital": false
+    },
+    "grauParentesco": "PAI"
+  }
