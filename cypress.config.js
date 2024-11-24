@@ -10,7 +10,15 @@ module.exports = defineConfig({
       requestMode: true
 
     },
-    experimentalRunAllSpecs: true
+    experimentalRunAllSpecs: true,
+
+    reporter: 'cypress-mochawesome-reporter',
+    reporterOptions: {
+      reportDir: "cypress/reports",
+      overwrite: false,
+      html: true,
+      json: true,
+    },
   },
   fixturesFolder: false,
   video: false,
