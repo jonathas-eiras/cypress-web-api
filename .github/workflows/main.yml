@@ -3,10 +3,10 @@ name: Cypress Tests
 on: 
   push:
     branches:
-      - testes-web
+      - main
   pull_request:
     branches:
-      - testes-web
+      - main
   workflow_dispatch:
 jobs:
   cypress-run:
