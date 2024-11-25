@@ -11,6 +11,9 @@ on:
 jobs:
   cypress-run:
     runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
 
     steps:
       - name: Check out repository
@@ -52,10 +55,8 @@ jobs:
   
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v1
-        with:
-          branch: gh-pages
-          folder: public
-          
+        
+
       - name: Upload Cypress report artifacts
         if: always()
         uses: actions/upload-artifact@v3
