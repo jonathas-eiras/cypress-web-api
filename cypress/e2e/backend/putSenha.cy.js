@@ -6,21 +6,14 @@ describe("Alterar senha cartão", () => {
 
     const idPortador = 2001
     let idCartao = null
-    let getcpf = null
 
-    beforeEach(() => { 
-        
+    beforeEach(() => {
+
         cy.api_getPortador(idPortador)
             .then(response => {
-                getcpf=response.body.cpf
+                idCartao = response.body.idCartao
             })
-        
-        cy.api_getCartaoPorCpf(getcpf)
-        .then(response => {
-            expect(response.status).to.equal(200)
-            idCartao = response.body.id
-        })
-        
+
     })
 
     it("Sucesso", () => {

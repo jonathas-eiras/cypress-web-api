@@ -92,6 +92,8 @@ Cypress.Commands.add('api_patchPortador', (idPortador, portador) => {
         url: `${Cypress.env('apiBaseUrl')}/api/v1/portadores/${idPortador}`,
         headers: {
             Authorization: accessToken,
+            Accept:'application/json',
+            'Content-type':'application/json',
 
         },
         body: portador
@@ -130,16 +132,6 @@ Cypress.Commands.add('api_deleteTelefonePortador', (idPortador, idTelefone)=> {
     })
 })
 
-Cypress.Commands.add('api_getCartaoPorCpf', cpfPortador => {
-    cy.request({
-        method: 'GET',
-        url: `${Cypress.env('apiBaseUrl')}/api/v1/cartoes/cpf/${cpfPortador}`,
-        headers: {
-            Authorization: accessToken,
-        }
-    })
-})
-
 Cypress.Commands.add('api_putSenhaCartao', (idCartao, senhaAntiga, senhaNova) => {
     cy.request({
         method: 'PUT',
@@ -148,7 +140,6 @@ Cypress.Commands.add('api_putSenhaCartao', (idCartao, senhaAntiga, senhaNova) =>
             Authorization: accessToken,
             senha_antiga: senhaAntiga,
             senha_nova: senhaNova
-        },
-        body: portador
+        }
     })
 })
