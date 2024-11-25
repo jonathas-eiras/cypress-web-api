@@ -48,25 +48,12 @@ jobs:
         env:
           CI: true
           
-  
-      - name: Move report to public folder
-        run: |
-          mkdir -p public
-          cp -R cypress/reports/* public/
-  
-      - name: Prepare site for deployment
-        run: |
-          mkdir -p _site
-          cp -R public/* _site/
-  
 
-      - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v1
-        
-
-      - name: Upload Cypress report artifacts
-        if: always()
+      - name: Upload test reports
         uses: actions/upload-artifact@v3
         with:
           name: cypress-reports
           path: cypress/reports
+        
+
+      
