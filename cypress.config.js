@@ -2,7 +2,11 @@ const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
   e2e: {
-    
+    setupNodeEvents(on, config) {
+      require('cypress-mochawesome-reporter/plugin')(on);
+      return config;
+    },
+
     env: {
       baseUrl: 'http://provaqa.prc.rpe.tech:9080/desafioqa',
       apiBaseUrl: 'https://horizon-api-sb.app.rpe.tech',
