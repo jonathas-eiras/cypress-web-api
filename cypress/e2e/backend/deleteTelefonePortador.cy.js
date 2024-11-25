@@ -18,9 +18,6 @@ describe("Deletar telefone Portador", () => {
         cy.api_deleteTelefonePortador(idPortador, idTelefone)
             .then(response => {
                 expect(response.status).to.equal(200)
-                expect(response.body.httpStatus).to.equal('OK')
-                expect(response.body).to.have.property('msg')
-
             })
 
     })

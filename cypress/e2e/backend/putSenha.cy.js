@@ -5,16 +5,17 @@ import { faker } from '@faker-js/faker'
 describe("Alterar senha cartão", () => {
 
     const idPortador = 2001
-    let cpfPortador = null
     let idCartao = null
+    let getcpf = null
 
     beforeEach(() => { 
+        
         cy.api_getPortador(idPortador)
             .then(response => {
-                cpfPortador = response.body.cpf
+                getcpf=response.body.cpf
             })
         
-        cy.api_getCartaoPorCpf(cpfPortador)
+        cy.api_getCartaoPorCpf(getcpf)
         .then(response => {
             expect(response.status).to.equal(200)
             idCartao = response.body.id

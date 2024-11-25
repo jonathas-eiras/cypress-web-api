@@ -10,7 +10,7 @@ describe("Alterar Portador", () => {
         portador.email = faker.internet.email()
         portador.cidadeNatal = faker.location.city()
 
-        const idPortador = 1
+        const idPortador = 2002
         
         cy.api_patchPortador(idPortador, portador)
         .then(response => {

@@ -12,7 +12,7 @@ describe("Cadastrar Dependente", () => {
         dependente.dataNascimento = faker.date.birthdate()
         dependente.sexo = faker.person.sex()
     
-        const idPortador = 1
+        const idPortador = 2001
         
         cy.api_postDependente(idPortador, dependente)
         .then(response => {
