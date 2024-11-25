@@ -45,15 +45,9 @@ jobs:
         env:
           CI: true
       
-      - name: Ensure report directory exists
-        run: mkdir -p cypress/reports
-  
-      - name: List generated reports
-        run: ls -l cypress/reports || echo "No reports found"
-      
       - name: Upload Cypress report artifacts
         if: always()
         uses: actions/upload-artifact@v3
         with:
           name: cypress-reports
-          path: ccypress/reports
+          path: cypress/reports
