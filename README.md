@@ -2,7 +2,7 @@
 
 # Projeto de Testes Automatizados Web e Apis, com Cypress
 
-Repositório contendo testes automatizados, que foram implementados com uso do de boas práticas do Cypress.
+Repositório contendo testes automatizados, que foram implementados com uso de boas práticas do Cypress.
 
 ## Estrutura do Projeto
 
@@ -37,7 +37,10 @@ A estrutura do projeto está organizada conforme abaixo:
 
 - Acessar a aba actions
 
-- Escolher a opção Cypress-tests e clicar em Run workflow - Run workflow
+- Escolher a opção Cypress Tests e clicar em Run workflow - Run workflow
+
+  ![Screenshot 2024-11-24 at 23 18 51](https://github.com/user-attachments/assets/baa022d8-687c-4536-a320-8cde4edca86f)
+
 
 
 ### Relatórios
@@ -46,6 +49,7 @@ A estrutura do projeto está organizada conforme abaixo:
 
 - Rolar a página até a seção Artifacts e baixar os relatórios.
 
-  <img width="1420" alt="Screenshot 2024-11-04 at 12 47 19" src="https://github.com/user-attachments/assets/0b3caf94-5eee-428e-be94-25044634c307">
+ ![Screenshot 2024-11-24 at 23 20 36](https://github.com/user-attachments/assets/0f7857ab-4124-405c-b4e9-c12e4ab51b9b)
+
 
 - Abrir o arquivo index.html em um navegador.
